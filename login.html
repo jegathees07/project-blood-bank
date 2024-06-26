@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>    
+    <link rel="stylesheet" href="login.css">
+    <title>Login page-Dolife</title>
+</head>
+<body>
+    <section class="row">
+        <div class="left-side-content">
+            <img src="assets/My password-rafiki.svg" alt="">
+        </div>
+        <div id="login-page">
+            <main>
+                <h1 class="form-heading">Login</h1>
+                <form action="" id="login-form">
+                    <div class="form-inputs">
+                        <label for="email-value" class="form-label">Email:</label>
+                        <input type="email" id="email-value"  name="email-value">
+                        <button id="send-otp" type="submit" onclick="sendOTP()">Send OTP</button>
+                    </div>
+                    <div id="form-inputs-1">
+                        <label for="otp-1" class="form-label">OTP:</label>
+                        <div class="otp-inputs">
+                            <div>
+                            <input type="number" id="otp-1"  name="otp" class="otp-number-input">
+                        </div>
+                        <div class="verify">
+                            <button type="submit" id="verify-otp">Verify OTP</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <a href="#" id="request-again" onclick="requestAgain()">Request again?</a>
+                        <br>
+                        <b class="convert">Create an account?</b><a  href="signup.html">Signup</a> 
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+</div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

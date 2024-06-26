@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page-Dolife</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleav pis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="signup-fullpage">
+        <div class="container">
+            <div class="row">
+                <div class="left-side-content">
+                    <img src="assets/My password-rafiki.svg" alt="">
+                </div>
+                <div id="signup-page">
+                    <main>
+                        <h1 class="form-heading">Sign up</h1>
+                        <form action="" id="signup-form">
+                            <div class="form-inputs">
+                                <label class="form-label" for="name">Fullname:</label>
+                                <input type="text" name="name" id="name" placeholder="Enter your name">
+                                <span class="message">Your name is too short</span>
+                            </div>
+                            <div class="form-inputs" id="form-control">
+                                <label class="form-label" for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                                <span class="message">Check your email*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <label class="form-label" for="mobile">Mobile No:</label>
+                                <input type="number" name="mobile" id="mobile" placeholder="Enter your mobile number">
+                                <span class="message">Check your mobile number*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <label class="form-label" for="password">Password:</label>
+                                <input type="password" name="password" id="password" placeholder="Enter your password">
+                                <span class="message">Password must contains min 6 letters*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <label class="form-label" for="confirm">Confirm Password:</label>
+                                <input type="password" name="confirm" id="confirm" placeholder="Enter your confirm password">
+                                <span class="message">Check your Confirm password*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <button  id="btn-signup"  type="submit">Sign up</button>
+                            </div>
+                            <div class="account">
+                                <b>Already have a account?</b><a href="login.html" onclick="openLoginPage()">Login</a>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+    </section>
+<script src="signup.js"></script>
+</body>
+</html>
